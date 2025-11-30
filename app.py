@@ -1,5 +1,5 @@
 from flask import Flask
-aws_key = "AKIAIOSFODNN7EXAMPLE"
+
 app = Flask(__name__)
 
 @app.route('/')
