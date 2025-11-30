@@ -23,3 +23,8 @@ jobs:
         run: |
           pip install pip-audit
           pip-audit -r requirements.txt
+
+      - name: Security Check - SAST (Bandit)
+        run: |
+          pip install bandit
+          bandit -r .
